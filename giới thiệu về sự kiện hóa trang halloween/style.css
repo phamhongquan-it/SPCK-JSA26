@@ -18,7 +18,7 @@ body{
 }
 .img1{
     position: absolute;
-    width: 700px;
+    width: 650px;
     left: 150px;
     top: 190px;
 }
@@ -26,5 +26,25 @@ body{
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 800px;
+    height: 750px;
+}
+.text1{
+    position: absolute;
+    left: 870px;
+    top: 220px;
+}
+.text1 h1{
+    font-size: 50px;
+    font-family: 'Bungee', cursive;
+    color: aliceblue;
+}
+.h1{
+    position:absolute;
+    top:60px;
+}
+.text1 p{
+    font-family:sans-serif;
+    color: rgb(255, 214, 168);
+    font-size: 25px;
+    font-weight: 600;
 }
