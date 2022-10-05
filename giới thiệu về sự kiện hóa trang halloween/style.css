@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: rgb(202, 157, 245);
+    background-color: rgb(26, 26, 26);
 }
 /* h1{
     text-align: center;
@@ -36,7 +36,7 @@ body{
 .text1 h1{
     font-size: 50px;
     font-family: 'Bungee', cursive;
-    color: aliceblue;
+    color: rgb(255, 180, 41);
 }
 .h1{
     position:absolute;
@@ -47,4 +47,30 @@ body{
     color: rgb(255, 214, 168);
     font-size: 25px;
     font-weight: 600;
+    margin-right: 100px;
+}
+.p2{
+    position: relative;
+    top: 900px;
+}
+.p2 .img3{
+    width: 1250px;
+    position: absolute;
+    right: 0px;
+}
+.p2 .img4{
+    width: 430px;
+    position: absolute;
+    right: 890px;
+    top: -70px;
+}
+.p2 h1{
+    font-size: 50px;
+        font-family: 'Bungee', cursive;
+        color: rgb(255, 255, 255);
+}
+.text2{
+    position:absolute;
+    top:40px;
+    right:350px;
 }
