@@ -4,6 +4,11 @@ body {
     background-color: rgb(26, 26, 26);
 }
 
+
+
+
+
+
 /* h1{
     text-align: center;
     font-family: sans-serif;
@@ -13,7 +18,8 @@ body {
     padding: 50px;
     text-transform: uppercase;
 } */
-.p1 {
+/* p1 */
+#p1 {
     position: relative;
     top: -33px;
 }
@@ -56,26 +62,45 @@ body {
     font-weight: 600;
     margin-right: 100px;
 }
+#p1 a{
+    font-weight: 600;
+    font-family: sans-serif;
+        font-weight: 600;
+        color: rgb(255, 208, 0);
+        position: absolute;
+        top: 300px;
+        background-color: rgb(46, 46, 46);
+        padding: 20px 50px;
+        border-radius: 20px;
+        text-decoration: none;
+}
+#p1 a:hover{
+    color:rgb(172, 47, 255);
+    background-color: rgb(0, 0, 0);
+}
 
-.p2 {
+
+
+/* p2 */
+#p2 {
     position: relative;
     top: 900px;
 }
 
-.p2 .img3 {
+#p2 .img3 {
     width: 1250px;
     position: absolute;
     right: 0px;
 }
 
-.p2 .img4 {
+#p2 .img4 {
     width: 430px;
     position: absolute;
     right: 890px;
     top: -70px;
 }
 
-.p2 h1 {
+#p2 h1 {
     font-size: 50px;
     font-family: 'Bungee', cursive;
     color: rgb(255, 255, 255);
@@ -95,7 +120,14 @@ body {
     font-size: 30px;
 }
 
-.p3 {
+
+
+
+
+
+
+/* p3 */
+#p3 {
     text-align: center;
     position: relative;
     top: 1800px;
@@ -104,7 +136,7 @@ body {
     margin: 0px 50px; */
 }
 
-.p3 h1 {
+#p3 h1 {
     text-align: center;
     font-family: 'Bungee', cursive;
     font-size: 50px;
@@ -119,7 +151,12 @@ body {
     padding: 50px;
 }
 
-.p4 {
+
+
+
+
+/* p4 */
+#p4 {
     padding-bottom: 600px;
     position: relative;
     top: 2100px;
@@ -152,12 +189,12 @@ body {
     margin-right: 50px;
 }
 
-.p4 h1 {
+#p4 h1 {
     color: rgb(255, 217, 0);
     font-family: 'Bungee', cursive;
 }
 
-.p4 h2 {
+#p4 h2 {
     color: rgb(255, 255, 255);
     font-family: 'Bungee', cursive;
     position: absolute;
@@ -165,7 +202,7 @@ body {
     font-size: 50px;
 }
 
-.p4 p {
+#p4 p {
     font-family: sans-serif;
     font-weight: 600;
     color: rgb(255, 255, 255);
@@ -179,7 +216,7 @@ body {
     left: 600px;
 }
 
-.p4 a {
+#p4 a {
     font-family: sans-serif;
     font-weight: 600;
     color: rgb(255, 208, 0);
@@ -188,22 +225,31 @@ body {
     background-color: rgb(24, 24, 24);
     padding: 20px 50px;
     border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+#p4 a:hover {
+    color: rgb(255, 145, 0);
+    background-color: rgb(34, 22, 44);
 }
 
-.p5 {
+
+
+/* p5 */
+#p5 {
     position: relative;
     top: 2300px;
     background-color: rgb(39, 39, 39);
     padding-bottom: 560px;
 }
 
-.p5 img {
+#p5 img {
     width: 1000px;
     position: absolute;
     left: 210px;
 }
 
-.p5 h1 {
+#p5 h1 {
     color: rgb(31, 31, 31);
     font-family: 'Bungee', cursive;
     position: absolute;
@@ -212,7 +258,7 @@ body {
     left: 570px;
     margin-right: 300px;
 }
-.p5 p{
+#p5 p{
     color: rgb(255, 247, 177);
         font-family:sans-serif;
         position: absolute;
