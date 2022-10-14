@@ -113,3 +113,18 @@ body{
     font-family: 'Bungee', cursive;
     color: white;
 }
+.line2{
+    height: 1px;
+    background-color: #ffbb00;
+    width: 80%;
+    margin: auto;
+}
+.album h2{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 40px;    
+    font-family: 'Bungee', cursive;
+    color: white;
+}
