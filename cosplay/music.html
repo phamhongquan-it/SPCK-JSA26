@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Music</title>
+
+    <link rel="shortcut icon"
+        href="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-halloween-festivals-and-holidays-flaticons-lineal-color-flat-icons-3.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./music.css">
 </head>
 
@@ -13,32 +18,25 @@
     <div class="sidebar">
         <img src="./assets/Logocovien.png" alt="">
         <div class="menu"></div>
-        <a id="baihat" href="#a1">Bài Hát</a>
-        <a id="album">Album</a>
+        <a id="baihat" href="#adult">Bài Hát</a>
+        <a id="album-link" href="#album">Album</a>
         <a id="sukien" href="./index.html">Sự kiện</a>
         <a id="dangky" href="./dk.html">Đăng ký</a>
-        <div class="line"></div>
-        <div class="funfact">
-            <h3>Fun facts</h3>
-            <p id="ff1">Halloween đã xuất hiện cách đây 6000 năm. Đây là một trong những lễ hội lâu đời nhất thế giới.
-            </p>
-            <p id="ff2">0.21 giây là kỷ lục về thời gian khắc hình mặt quỷ trên quả bí ngô để tạo thành đèn lồng trong
-                đêm Halloween và thuộc về David Finkle đến từ Vương quốc Anh.</p>
-            <p id="ff3">Xưa kia, người ta tin rằng mèo mun là thuộc hạ thân cận của phù thủy. Vì vậy, nếu một người hóa
-                trang thành phù thủy trong đêm Halloween thì bắt buộc phải mang theo một con mèo mun.</p>
-            <p id="ff4">Ma quỷ, phù thủy, đầu lâu,... là những nhân vật đáng sợ được lựa chọn nhiều nhất trong đêm
-                Halloween.</p>
-        </div>
 
+        <div class="line"></div>
+
+        <div class="funfact" id="facts">
+            <h3>Fun facts</h3>
+        </div>
     </div>
     </div>
     <div class="main">
         <div class="songs">
-            <div class="adult">
+            <div id="adult" class="adult">
                 <h2>Bài hát Halloween cho người lớn</h2>
                 <div class="adultsongs">
-                    <ul class="songlist">
-                        <li id="a1">
+                    <ul class="songlist" id="adult-songs">
+                        <!-- <li id="a1">
                             <img src="https://i.scdn.co/image/ab67616d00001e024121faee8df82c526cbab2be" alt="">
                             <a class="songname">Thriller</a>
                             <a class="songwriter">Micheal Jackson</a>
@@ -87,14 +85,15 @@
                             <img src="https://i.scdn.co/image/ab67616d00001e022f8d9427fea9dd36a4fb4f1b" alt="">
                             <a class="songname">The Phantom of the Opera</a>
                             <a class="songwriter">The Cramps</a>
-                        </li>
+                        </li> -->
                     </ul>
 
                 </div>
             </div>
+
             <div class="children">
                 <h2>Bài hát Halloween cho trẻ em</h2>
-                <div class="childrensongs">
+                <div class=" childrensongs">
                     <ul class="songlist">
                         <li id="c1">
                             <img src="https://i.scdn.co/image/ab67616d00001e0247cc5d86f3528b233f2b78ff" alt="">
@@ -150,7 +149,7 @@
                 </div>
             </div>
             <div class="line2"></div>
-            <div class="album">
+            <div id="album" class="album">
                 <h2>ALBUM</h2>
                 <div class="playlist">
                     <ul class="songlist">
@@ -184,6 +183,81 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const apiFact = "https://634bbd3cd90b984a1e3e8ce3.mockapi.io/facts";
+        fetch(apiFact).then((r) => r.json())
+            .then((data) => {
+                for (let index = 0; index < data.length; index++) {
+                    const element = data[index];
+
+                    document.querySelector("#facts").innerHTML += "<p>" + element + "</p>";
+                }
+            })
+
+        const adultSongs = [
+            {
+                "name": "This is Halloween",
+                "writer": "Danny Elfman",
+                "image": "https://i.scdn.co/image/ab67616d00004851edf6710f9c0cd81e37fcaf3d"
+            },
+            {
+                "name": "Monster Mash",
+                "writer": "Bobby \"Boris\" Pickett",
+                "image": "https://i.scdn.co/image/ab67616d00001e02b32dfcf8065fdb8ff77b360e"
+            },
+            {
+                "name": "Under My Bed",
+                "writer": "Recess Monkeys",
+                "image": "https://i.scdn.co/image/ab67616d00001e02a3cf7d524baed9e303302918"
+            },
+            {
+                "name": "Spooky, Scary Skeletons",
+                "writer": "Andrew Gold",
+                "image": "https://media.timeout.com/images/105846107/380/285/image.jpg"
+            },
+            {
+                "name": "Them Bones",
+                "writer": "Casper Babypants",
+                "image": "https://i.scdn.co/image/ab67616d00001e02893b3ceb557f555b81137655"
+            },
+            {
+                "name": "The Monster Hop",
+                "writer": "Bert Convy",
+                "image": "https://i.scdn.co/image/ab67616d00001e02a401debe1538c240f685d2db"
+            },
+            {
+                "name": "The Purple People Eater",
+                "writer": "Sheb Wooley",
+                "image": "https://i.scdn.co/image/ab67616d00001e0244a460d1cc632b1277139c96"
+            },
+            {
+                "name": "Halloween Sharks",
+                "writer": "Pinkfong",
+                "image": "https://i.scdn.co/image/ab67616d00001e02372695b19253e632d3fc96a7"
+            },
+            {
+                "name": "Costume Party",
+                "writer": "The Pop Ups",
+                "image": "https://i.scdn.co/image/ab67616d00001e02aed4808eac27b70ba532f0e4"
+            }
+        ];
+
+        localStorage.setItem("adultSongs", JSON.stringify(adultSongs));
+
+        const adultSongsFromLS = JSON.parse(localStorage.getItem("adultSongs"));
+        for (let index = 0; index < adultSongsFromLS.length; index++) {
+            const element = adultSongsFromLS[index];
+
+            document.querySelector("#adult-songs").innerHTML += `
+                <li id="a${index}">
+                    <img src="${element.image}" alt="">
+                    <a class="songname">${element.name}</a>
+                    <a class="songwriter">${element.writer}</a>
+                </li>
+            `;
+        }
+    </script>
 </body>
 
 </html>
