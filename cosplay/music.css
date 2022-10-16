@@ -128,3 +128,6 @@ body{
     font-family: 'Bungee', cursive;
     color: white;
 }
+a,p,h3{
+    font-family: sans-serif;
+}
