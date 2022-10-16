@@ -131,3 +131,7 @@ body{
 a,p,h3{
     font-family: sans-serif;
 }
+img{
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
