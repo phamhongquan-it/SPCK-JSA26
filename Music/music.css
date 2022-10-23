@@ -7,6 +7,7 @@ html {
 body {
     background-color: black;
     font-family: "Fuzzy Bubbles", cursive;
+    margin: 0;
 }
 ul {
     margin: 0;
@@ -147,4 +148,28 @@ ul {
 img {
     padding-bottom: 10px;
     border-radius: 10px;
+}
+#player {
+    position: fixed;
+    left: 220px;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#player button {
+    background-color: transparent;
+}
+
+#player svg {
+    color: #ffffff;
+    width: 24px;
+    height: 24px;
 }
