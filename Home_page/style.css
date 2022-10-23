@@ -100,6 +100,14 @@ body {
     margin-left: 30px;
 }
 
+.p2 {
+    font-size: 70px;
+    color: #fe7d17;
+    font-family: "Shadows Into Light", "Segoe UI", "Helvetica Neue", Arial,
+        sans-serif;
+    margin: 80px 0px 0px;
+}
+
 .inside-about span {
     font-size: 20px;
     font-weight: 500;
@@ -181,6 +189,7 @@ ul {
     justify-content: center;
     align-items: center;
 }
+
 .icon {
     width: 21px;
     height: 20px;

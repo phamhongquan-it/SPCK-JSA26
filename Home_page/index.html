@@ -35,17 +35,12 @@
     <div class="about">
         <img src="https://ld-wt73.template-help.com/tf/witchfest/images/index-01-534x600.png">
         <div class="inside-about">
-            <p class="p1">Trick or Treat? Boo!</p>
-            <p style="font-size: 20px; font-weight: 200;">Join us for an eerie evening tour of our castles and houses
-                for the fright of your life. Our storytellers
-                will guide you through the darkness and take you on a bone-chilling journey through the past. With tales
-                of ghosts, supernatural sightings and horrors from history, these events are not for the faint-hearted.
-            </p>
+            <div class="api"></div>
+            <p class="p2" id="name"></p>
+            <p style="font-size: 20px; font-weight: 200;" id="desc"></p>
             <ul>
-                <li class="about-li"><span style="color: #FE7D17;">Where:</span> <span> 178 West 27th Street, Suite 527,
-                        New York NY 10012</span><br></li>
-                <li class="about-li"><span style="color: #FE7D17;">When:</span> <span> October 31, open from 9:00 am to
-                        11:00 pm</span></li>
+                <li class="about-li"><span style="color: #FE7D17;">Where:</span> <span id="address"></span><br></li>
+                <li class="about-li"><span style="color: #FE7D17;">When:</span> <span id="time"></span></li>
             </ul>
             <button class="order-tickets">ORDER TICKETS</button>
         </div>
@@ -97,6 +92,15 @@
                 nav.style.backgroundColor = "transparent";
             }
         });
+        const apiFact = "https://634bbd3cd90b984a1e3e8ce3.mockapi.io/party-info/1";
+        fetch(apiFact).then((r) => r.json())
+            .then((data) => {
+                console.log(data);
+                document.querySelector("#name").innerHTML = data.name
+                document.querySelector("#desc").innerHTML = data.desc
+                document.querySelector("#address").innerHTML = data.address
+                document.querySelector("#time").innerHTML = data.time
+            })
     </script>
 </body>
 
