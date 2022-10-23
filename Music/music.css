@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: black;
+    font-family: "Fuzzy Bubbles", cursive;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.sidebar {
+    margin: 0;
+    padding: 9px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    background-color: #1c0036;
+    color: #ffbb00;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: auto;
+}
+.sidebar img {
+    padding-bottom: 10px;
+}
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #ffbb00;
+    font-size: 18px;
+    padding: 7px 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.sidebar a:hover {
+    background: #670dbb;
+    border-radius: 5px;
+}
+.line {
+    height: 1px;
+    background-color: rgb(132, 0, 255);
+    width: 90%;
+    margin: 20px auto;
+    flex-shrink: 0;
+}
+.funfact h3 {
+    margin: auto;
+    text-align: center;
+}
+.funfact p {
+    font-size: 13px;
+    color: black;
+    background-color: #ffbb00;
+    border: solid 1px black;
+    box-shadow: 1px 1px 2px 2px rgb(132, 0, 255);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: justify;
+}
+.main {
+    margin-left: 220px;
+}
+.adult {
+    display: inline-block;
+}
+.adult h2 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.songlist {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.songlist li {
+    padding: 15px;
+    width: 20%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.songlist li:hover {
+    background-color: #333;
+}
+.songlist img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+}
+.songname {
+    display: block;
+    font-size: 18px;
+    line-height: 1.4;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.songwriter {
+    font-size: 12px;
+    color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: normal;
+    color: white;
+}
+.children {
+    display: inline-block;
+    margin-top: 60px;
+}
+.children h2 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-size: 40px;
+    color: white;
+}
+.line2 {
+    height: 1px;
+    background-color: #ffbb00;
+    width: 80%;
+    margin: 30px auto;
+}
+.album h2 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 40px;
+    color: white;
+}
+a,
+p,
+h3 {
+    font-family: sans-serif;
+}
+img {
+    padding-bottom: 10px;
+    border-radius: 10px;
+}

@@ -1,0 +1,73 @@
+body{
+    background-color:#1c0036;
+}
+.popup{
+    position: absolute;
+    top: 30px;
+    left: 500px;
+    width: 380px;
+    padding: 20px 30px;
+    box-shadow:2px 2px 5px 5px rgb(132, 0, 255);
+    background-color: #000000;
+    border-radius: 10px;
+    padding-right: 50px;
+}
+.popup .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    height: 15px;
+    background-color: #ffbb00;
+    color: #000000;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.popup .form h2{
+    text-align: center;
+    color: #ffa600;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+    font-family: 'Bungee', cursive;
+}
+.popup ,form .formelm{
+    margin: 15px 0px;
+}
+.popup .form .formelm label{
+    font-size: 14px;
+    color: #7940ff;
+    font-family: 'Anek Latin', sans-serif;
+}
+.popup .form .formelm input[type="text"] ,.popup .form .formelm input[type="password"]{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ffbb00;
+    border-radius: 5px;
+
+}
+.popup .form .formelm input[type="checkbox"]{
+    margin-right: 5px;
+
+}
+.popup .form .formelm button{
+    width: 100%;
+    height: 40px;
+    border:  none;
+    outline: none;
+    font-size: 20px;
+    background: #ff9100;
+    color: #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.formelm{
+    margin-bottom: 20px;
+}
+

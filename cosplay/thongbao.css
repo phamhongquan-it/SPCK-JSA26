@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(12, 12, 12);
+}
+.diva{
+    position: relative;
+    left: 250px ;
+    top: 0px;
+}
+.diva img{
+    width: 800px;
+
+}
+.diva p{
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    margin-right: 100px;
+    font-family: 'Anek Latin', sans-serif;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+.diva a{
+    background-color: #1a003b;
+    font-size: 20px;
+    color: #ffc400;
+    padding: 15px 35px ;
+    font-family: 'Anek Latin', sans-serif;
+    text-decoration: none;
+    border: none;
+    font-weight: 600;
+    position: absolute;
+    top: 290px;
+    left: 320px;
+    border-radius: 50px;
+}
+.diva a:hover{
+    color: rgb(255, 255, 255);
+}
+.diva img{
+    position: absolute;
+}
+div h1{
+    position:absolute;
+    top:50px;
+    left:320px;
+    color:rgb(255, 187, 0);
+    font-family: sans-serif;
+}
