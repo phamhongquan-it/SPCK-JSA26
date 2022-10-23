@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,43 +51,22 @@
         </div>
     </div>
     <div class="services">
-        <div class="s-container">
-            <div class="party-begin">
-                <p class="p1">Let the Party begin!</p>
-                <p  style="font-size: 20px; font-weight: 200;">Every Witchfest we offer a varied selection of activities for any age.<br>From dancing parties to
-                    workshops, there's a lot you can take part in.</p>
+        <div class="party-begin">
+            <p class="p1">Let the Party begin!</p>
+            <p style="font-size: 20px; font-weight: 200;">Every Witchfest we offer a varied selection of activities
+                for any age.<br>From dancing parties to
+                workshops, there's a lot you can take part in.</p>
+        </div>
+        <div class="stuff-inside-services">
+            <div class="div-stuff">
+                <img src="ghost.png">
+                <h4>Ghost tour</h4>
+                <p>Discover the local mysteries and haunted places by attending the ghost tour.</p>
             </div>
-            <div class="stuff-inside-services">
-                <div class="div-stuff">
-                    <img src="ghost.png">
-                    <h4>Ghost tour</h4>
-                    <p>Discover the local mysteries and haunted places by attending the ghost tour.</p>
-                </div>
-                <div class="div-stuff">
-                    <img src="pumkin.png">
-                    <h4>Jack-O'-Lantern piñata</h4>
-                    <p>Make this Halloween memorable for your kids with our Jack-o’-lantern piñata.</p>
-                </div>
-                <div class="div-stuff">
-                    <img src="monster's hand.png">
-                    <h4>Zombie run</h4>
-                    <p>Dress up and try to avoid an army of undead to win a special prize!</p>
-                </div>
-                <div class="div-stuff">
-                    <img src="bone.png">
-                    <h4>Murder mystery dinner</h4>
-                    <p>Solve a mysterious murder and get an award for the fanciest dress.</p>
-                </div>
-                <div class="div-stuff">
-                    <img src="liquid.png">
-                    <h4>Halloween crafts</h4>
-                    <p>Get your kids involved in Halloween with the festive crafts and cookery.</p>
-                </div>
-                <div class="div-stuff">
-                    <img src="hat.png">
-                    <h4>Witch Dance Party</h4>
-                    <p>Show your spooky costumes and dancing skills in our event’s dance party.</p>
-                </div>
+            <div class="div-stuff">
+                <img src="pumkin.png">
+                <h4>Jack-O'-Lantern piñata</h4>
+                <p>Make this Halloween memorable for your kids with our Jack-o’-lantern piñata.</p>
             </div>
         </div>
     </div>
@@ -100,11 +80,24 @@
             <a href=""><img src="icons8-linkedin-2-32.png" alt="" class="icon"></a>
         </div>
         <div style="display: flex; justify-content: center;">
-            <p>© 2022 Witchfest. All rights reserved.<br>
+            <p style="text-align: center">© 2022 Witchfest. All rights reserved.<br>
                 Design by "Someone"</p>
         </div>
     </div>
 
+    <script>
+        // Tạo sự kiện khi cuộn xuống thì đổi nền của header
+        const nav = document.querySelector(".nav");
+        window.addEventListener("scroll", () => {
+            const position = document.documentElement.scrollTop;
+
+            if (position > 100) {
+                nav.style.backgroundColor = "rgb(255, 255, 255)";
+            } else {
+                nav.style.backgroundColor = "transparent";
+            }
+        });
+    </script>
 </body>
 
 </html>

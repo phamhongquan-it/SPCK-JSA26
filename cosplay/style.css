@@ -6,6 +6,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: rgb(17, 17, 17);
+    font-family: "Kanit", sans-serif;
 }
 
 h1,
@@ -43,7 +44,6 @@ h2 {
 }
 
 .text1 p {
-    font-family: sans-serif;
     color: rgb(255, 214, 168);
     font-size: 20px;
     font-weight: 600;
@@ -54,7 +54,6 @@ h2 {
     display: block;
     width: fit-content;
     font-weight: 600;
-    font-family: sans-serif;
     font-weight: 600;
     color: rgb(255, 208, 0);
     margin-top: 20px;
@@ -119,13 +118,13 @@ h2 {
 }
 
 .text2 p {
-    font-family: sans-serif;
     font-weight: 600;
-    color: rgb(150, 93, 255);
+    /* color: rgb(150, 93, 255); */
     font-size: 20px;
     margin: 0;
     padding: 20px 0;
     text-align: justify;
+    line-height: 1.2;
 }
 
 /* p3 */
@@ -203,7 +202,6 @@ h2 {
 }
 
 #p4 p {
-    font-family: sans-serif;
     font-weight: 600;
     color: rgb(255, 255, 255);
     font-size: 14px;
@@ -211,7 +209,6 @@ h2 {
 
 #p4 a {
     display: block;
-    font-family: sans-serif;
     font-weight: 600;
     color: rgb(255, 208, 0);
     background-color: rgb(24, 24, 24);
@@ -246,7 +243,6 @@ h2 {
 }
 /* #p5 p {
     color: rgb(255, 247, 177);
-    font-family: sans-serif;
     font-weight: 600;
     position: relative;
     width: 50%;
@@ -307,15 +303,15 @@ h2 {
     background-color: rgb(255, 196, 0);
 }
 
-#img1:checked~.imgslide1 {
+#img1:checked ~ .imgslide1 {
     margin-left: -100%;
 }
 
-#img2:checked~.imgslide2 {
+#img2:checked ~ .imgslide2 {
     margin-left: -200%;
 }
 
-#img3:checked~.imgslide3 {
+#img3:checked ~ .imgslide3 {
     margin-left: -300%;
 }
 
@@ -334,7 +330,7 @@ h2 {
 .c1p6 a {
     text-decoration: none;
     color: #d4d4d4;
-    font-family: 'Anek Latin', sans-serif;
+    font-family: "Kanit", sans-serif;
 }
 
 .c2p6 {
@@ -356,16 +352,15 @@ h2 {
 .c2p6 p {
     text-decoration: none;
     color: #747474;
-    font-family: 'Anek Latin', sans-serif;
+    font-family: "Kanit", sans-serif;
     font-weight: 500;
 }
 
 .ap6 {
     margin-left: 10px;
 }
-.ap6 a:hover{
+.ap6 a:hover {
     text-decoration: underline;
-
 }
 
 .p6 li {
@@ -378,4 +373,19 @@ h2 {
 
 .cc42p6 a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+    .img1 {
+        display: none;
+    }
+
+    #p1 {
+        background-image: none;
+    }
+
+    .text1 {
+        max-width: 100%;
+        padding: 0 20px;
+    }
 }

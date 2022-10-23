@@ -1,5 +1,5 @@
 * {
-    font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Arial, sans-serif
+    font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
 html {
@@ -27,6 +27,7 @@ body {
     top: 0;
     left: 0;
     z-index: 999999999;
+    transition: all 0.5s;
 }
 
 .navbar {
@@ -42,12 +43,12 @@ body {
     font-size: 18px;
     line-height: 1.62222;
     font-weight: 400;
-    color: #22282F;
+    color: #22282f;
     text-decoration: none;
 }
 
 .navitems:hover {
-    color: #FE7D17;
+    color: #fe7d17;
 }
 
 .open {
@@ -75,8 +76,9 @@ body {
     margin: 0px;
     position: absolute;
     top: 0;
-    color: #FE7D17;
-    font-family: "Shadows Into Light", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: #fe7d17;
+    font-family: "Shadows Into Light", "Segoe UI", "Helvetica Neue", Arial,
+        sans-serif;
     z-index: 3;
 }
 
@@ -132,23 +134,20 @@ ul {
 
 .p1 {
     font-size: 70px;
-    color: #FE7D17;
-    font-family: "Shadows Into Light", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: #fe7d17;
+    font-family: "Shadows Into Light", "Segoe UI", "Helvetica Neue", Arial,
+        sans-serif;
     margin: 80px 0px 0px;
 }
 
 .services {
-    background-color: #FEEAC74D;
-    height: 1238.38px;
+    background-color: #feeac74d;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0px;
-}
-
-.s-container {
-    width: 1200px;
-    height: 988.38px;
+    padding-bottom: 50px;
 }
 
 .party-begin {
@@ -160,6 +159,7 @@ ul {
 .stuff-inside-services {
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .div-stuff {

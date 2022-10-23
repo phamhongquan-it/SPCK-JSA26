@@ -1,3 +1,4 @@
+// Tạo sự kiện khi cuộn xuống thì đổi nền của header
 const menu = document.querySelector(".menu");
 window.addEventListener("scroll", () => {
     const position = document.documentElement.scrollTop;
