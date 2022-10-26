@@ -31,3 +31,6 @@ fetch(apiPartyInfo)
             .insertAdjacentHTML("beforeend", html);
 
     });
+
+const apiPartyInfo1 = "https://634bbd3cd90b984a1e3e8ce3.mockapi.io/party-info/1";
+

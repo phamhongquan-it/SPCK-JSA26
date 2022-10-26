@@ -380,6 +380,25 @@ h2 {
     text-decoration: underline;
 }
 
+/* p4-1 */
+.p4-1 {
+    background-color: rgb(0, 0, 0);
+    padding: 50px;
+    margin: 100px 150px;
+    border-radius: 20px;
+}
+
+.namep4-1 {
+    font-family: "Bungee", cursive;
+    text-align: center;
+    color: goldenrod;
+}
+
+.pp4-1 {
+    font-size: 20px;
+    color: #4400ff;
+}
+
 @media screen and (max-width: 992px) {
     .img1 {
         display: none;
@@ -674,41 +693,26 @@ h2 {
 
     /* p4-1 */
     .p4-1 {
+        /* display: none; */
+    }
+
+    .p4-1 {
         background-color: rgb(0, 0, 0);
-        padding: 50px;
+        padding: 30px;
+        margin: 50px 50px;
         border-radius: 20px;
     }
 
     .namep4-1 {
+        font-size: 25px;
         font-family: "Bungee", cursive;
         text-align: center;
         color: goldenrod;
-        font-size: 15px;
     }
-    .textbop4-1 p{
-        font-size: 5px;
+
+    .pp4-1 {
+        font-size: 20px;
+        color: #4400ff;
     }
-    .pp4-1{
-        font-size: 10px;
-        color:#d4d4d4;
-    }
-}
 
-/* p4-1 */
-.p4-1 {
-    background-color: rgb(0, 0, 0);
-    padding: 50px;
-    margin: 100px 400px;
-    border-radius: 20px;
-}
-
-.namep4-1 {
-    font-family: "Bungee", cursive;
-    text-align: center;
-    color: goldenrod;
-}
-
-.pp4-1{
-    font-size: 20px;
-    color:#4400ff;
 }
