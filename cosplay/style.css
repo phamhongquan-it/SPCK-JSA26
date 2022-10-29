@@ -70,11 +70,28 @@ h2 {
 }
 
 .menu {
+    display:flex;
     position: fixed;
     top: 0px;
     width: 100%;
     padding: 10px 20px;
     transition: all 0.5s;
+}
+.ta{margin-top: 15px;
+margin-left: 100px;}
+.menu a {
+    text-shadow: #4400ff 0 0 5px;
+    padding:20px;
+    border-radius: 20px;
+    font-weight: 600;
+    border:#4400ff solid 2px;
+    /* background-color: #333333; */
+    color: rgb(255, 208, 0);
+    text-decoration: none;
+}
+.menu a:hover {
+    background-color: #090022;
+    color: rgb(240, 105, 27);
 }
 
 .menu>.logo1 {
@@ -244,32 +261,6 @@ h2 {
     font-family: "Bungee", cursive;
     text-align: center;
 }
-
-/* #p5 p {
-    color: rgb(255, 247, 177);
-    font-weight: 600;
-    position: relative;
-    width: 50%;
-}
-
-#p5 p img {
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-}
-
-#p5 p span {
-    position: absolute;
-    top: 20%;
-    right: 10%;
-    max-width: 50%;
-    font-size: 28px;
-} */
-/* * {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-} */
 
 .slide {
     width: 60%;
