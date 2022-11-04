@@ -156,8 +156,11 @@
             </button>
         </div>
         <marquee width="250" id="song-name">
-            The Purple People Eater
+            No song playing
         </marquee>
+        <audio id="song">
+            <source type="audio/mpeg" src="">
+        </audio>
     </div>
 
     <script>
@@ -175,47 +178,56 @@
             {
                 "name": "This is Halloween",
                 "writer": "Danny Elfman",
-                "image": "https://i.scdn.co/image/ab67616d00004851edf6710f9c0cd81e37fcaf3d"
+                "image": "https://i.scdn.co/image/ab67616d00004851edf6710f9c0cd81e37fcaf3d",
+                "song": "./sample copy 1.mp3"
             },
             {
                 "name": "Monster Mash",
                 "writer": "Bobby \"Boris\" Pickett",
-                "image": "https://i.scdn.co/image/ab67616d00001e02b32dfcf8065fdb8ff77b360e"
+                "image": "https://i.scdn.co/image/ab67616d00001e02b32dfcf8065fdb8ff77b360e",
+                "song": "./sample copy 2.mp3"
             },
             {
                 "name": "Under My Bed",
                 "writer": "Recess Monkeys",
-                "image": "https://i.scdn.co/image/ab67616d00001e02a3cf7d524baed9e303302918"
+                "image": "https://i.scdn.co/image/ab67616d00001e02a3cf7d524baed9e303302918",
+                "song": "./sample copy 3.mp3"
             },
             {
                 "name": "Spooky, Scary Skeletons",
                 "writer": "Andrew Gold",
-                "image": "https://media.timeout.com/images/105846107/380/285/image.jpg"
+                "image": "https://media.timeout.com/images/105846107/380/285/image.jpg",
+                "song": "./sample copy 4.mp3"
             },
             {
                 "name": "Them Bones",
                 "writer": "Casper Babypants",
-                "image": "https://i.scdn.co/image/ab67616d00001e02893b3ceb557f555b81137655"
+                "image": "https://i.scdn.co/image/ab67616d00001e02893b3ceb557f555b81137655",
+                "song": "./sample copy 5.mp3"
             },
             {
                 "name": "The Monster Hop",
                 "writer": "Bert Convy",
-                "image": "https://i.scdn.co/image/ab67616d00001e02a401debe1538c240f685d2db"
+                "image": "https://i.scdn.co/image/ab67616d00001e02a401debe1538c240f685d2db",
+                "song": "./sample copy 6.mp3"
             },
             {
                 "name": "The Purple People Eater",
                 "writer": "Sheb Wooley",
-                "image": "https://i.scdn.co/image/ab67616d00001e0244a460d1cc632b1277139c96"
+                "image": "https://i.scdn.co/image/ab67616d00001e0244a460d1cc632b1277139c96",
+                "song": "./sample copy 7.mp3"
             },
             {
                 "name": "Halloween Sharks",
                 "writer": "Pinkfong",
-                "image": "https://i.scdn.co/image/ab67616d00001e02372695b19253e632d3fc96a7"
+                "image": "https://i.scdn.co/image/ab67616d00001e02372695b19253e632d3fc96a7",
+                "song": "./sample copy 8.mp3"
             },
             {
                 "name": "Costume Party",
                 "writer": "The Pop Ups",
-                "image": "https://i.scdn.co/image/ab67616d00001e02aed4808eac27b70ba532f0e4"
+                "image": "https://i.scdn.co/image/ab67616d00001e02aed4808eac27b70ba532f0e4",
+                "song": "./sample copy 9.mp3"
             }
         ];
 
@@ -226,12 +238,63 @@
             const element = adultSongsFromLS[index];
 
             document.querySelector("#adult-songs").innerHTML += `
-                <li id="a${index}">
+                <li id="a${index}" data-song="${element.song}" data-name="${element.name}">
                     <img src="${element.image}" alt="">
                     <a class="songname">${element.name}</a>
                     <a class="songwriter">${element.writer}</a>
                 </li>
             `;
+        }
+
+        const audio = document.querySelector("#song");
+        const songElements = document.querySelectorAll("#adult-songs > li");
+        const songName = document.querySelector("#song-name");
+        const playButton = document.querySelector("#play");
+        const nextButton = document.querySelector("#next");
+        const prevButton = document.querySelector("#prev");
+        let current = 0;
+
+        for (let index = 0; index < songElements.length; index++) {
+            const element = songElements[index];
+
+            element.onclick = () => {
+                current = index;
+                songName.innerHTML = element.dataset.name;
+                audio.firstElementChild.src = element.dataset.song;
+                audio.load();
+                audio.play();
+            }
+        }
+
+        playButton.onclick = () => {
+            if (audio.paused === true) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+
+        function play(id) {
+            songName.innerHTML = adultSongsFromLS[id].name;
+            audio.firstElementChild.src = adultSongsFromLS[id].song;
+            audio.load();
+            audio.play();
+        }
+
+        nextButton.onclick = () => {
+            current++;
+            if (current > adultSongsFromLS.length - 1) {
+                current = 0;
+            }
+            play(current);
+        }
+
+        prevButton.onclick = () => {
+            current--;
+            if (current < 0) {
+                current = adultSongsFromLS.length - 1;
+            }
+            play(current);
         }
     </script>
 </body>
