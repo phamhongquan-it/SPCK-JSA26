@@ -67,6 +67,7 @@ ul {
 }
 .main {
     margin-left: 220px;
+    margin-bottom: 80px;
 }
 .adult {
     display: inline-block;
@@ -166,6 +167,7 @@ img {
 
 #player button {
     background-color: transparent;
+    cursor: pointer;
 }
 
 #player svg {

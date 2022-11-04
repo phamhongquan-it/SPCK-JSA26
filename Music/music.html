@@ -39,95 +39,20 @@
                 </div>
             </div>
 
-            <div class="children">
+            <div class="children" id="children">
                 <h2>Bài hát Halloween cho trẻ em</h2>
-                <div class=" childrensongs">
-                    <ul class="songlist">
-                        <li id="c1">
-                            <img src="https://i.scdn.co/image/ab67616d00001e0247cc5d86f3528b233f2b78ff" alt="">
-                            <a class="songname">This is Halloween</a>
-                            <a class="songwriter">Danny Elfman</a>
-                        </li>
-                        <li id="c2">
-                            <img src="https://i.scdn.co/image/ab67616d00004851edf6710f9c0cd81e37fcaf3d" alt="">
-                            <a class="songname">Monster Mash</a>
-                            <a class="songwriter">Bobby "Boris" Pickett</a>
-                        </li>
-                        <li id="c3">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02b32dfcf8065fdb8ff77b360e" alt="">
-                            <a class="songname">Under My Bed</a>
-                            <a class="songwriter">Recess Monkeys</a>
-                        </li>
-                        <li id="c4">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02a3cf7d524baed9e303302918" alt="">
-                            <a class="songname">Spooky, Scary Skeletons</a>
-                            <a class="songwriter">Andrew Gold</a>
-                        </li>
-                        <li id="c5">
-                            <img src="https://media.timeout.com/images/105846107/380/285/image.jpg" alt="">
-                            <a class="songname">Them Bones</a>
-                            <a class="songwriter">Casper Babypants</a>
-                        </li>
-                        <li id="c6">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02893b3ceb557f555b81137655" alt="">
-                            <a class="songname">The Monster Hop</a>
-                            <a class="songwriter">Bert Convy</a>
-                        </li>
-                        <li id="c7">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02a401debe1538c240f685d2db" alt="">
-                            <a class="songname">The Purple People Eater</a>
-                            <a class="songwriter">Sheb Wooley</a>
-                        </li>
-                        <li id="c8">
-                            <img src="https://i.scdn.co/image/ab67616d00001e0244a460d1cc632b1277139c96" alt="">
-                            <a class="songname">Halloween Sharks</a>
-                            <a class="songwriter">Pinkfong</a>
-                        </li>
-                        <li id="c9">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02372695b19253e632d3fc96a7" alt="">
-                            <a class="songname">Costume Party</a>
-                            <a class="songwriter">The Pop Ups</a>
-                        </li>
-                        <li id="c10">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02aed4808eac27b70ba532f0e4" alt="">
-                            <a class="songname">Ghostbusters</a>
-                            <a class="songwriter">Ray Parker Jr.</a>
-                        </li>
-                    </ul>
+                <div class="childrensongs">
+                    <ul class="songlist" id="children-songs"></ul>
                 </div>
             </div>
+
             <div class="line2"></div>
             <div id="album" class="album">
                 <h2>ALBUM</h2>
                 <div class="playlist">
-                    <ul class="songlist">
-                        <li id="c1">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02a3cf7d524baed9e303302918" alt="">
-                            <a class="songname">Halloween Howls</a>
-                            <a class="songwriter">Andrew Gold</a>
-                        </li>
-                        <li id="c2">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02403eb6112596985a80a6b62b" alt="">
-                            <a class="songname">Halloween Beats</a>
-                            <a class="songwriter">H@tten</a>
-                        </li>
-                        <li id="c3">
-                            <img src="https://i.scdn.co/image/ab67616d00001e0218595c65a8b0914b55f82da3" alt="">
-                            <a class="songname">Helloween Playlist</a>
-                            <a class="songwriter">Various artists</a>
-                        </li>
-                        <li id="c4">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02e4b15c92ae3f2690483c7a00" alt="">
-                            <a class="songname">Haloween</a>
-                            <a class="songwriter">JDHD Beats</a>
-                        </li>
-                        <li id="c5">
-                            <img src="https://i.scdn.co/image/ab67616d00001e027318a1fc927fe7824a59dc12" alt="">
-                            <a class="songname">Halloween with CoComelon</a>
-                            <a class="songwriter">CoComelon</a>
-                        </li>
-                    </ul>
+                    <ul class="songlist" id="playlist"></ul>
                 </div>
+                <div class="line2"></div>
             </div>
         </div>
     </div>
@@ -176,59 +101,157 @@
 
         const adultSongs = [
             {
+                "name": "There will be blood",
+                "writer": "Kim Petras",
+                "image": "https://i.scdn.co/image/ab67616d00001e02c877df6d9a3fe603c85b2871",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Kim_Petras_There_Will_Be_Blood.mp3",
+            },
+            {
+                "name": "Nightmare",
+                "writer": "Halsey",
+                "image": "https://i.scdn.co/image/ab67616d00001e020db100d30d1ef9a91aefeabf",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Halsey_Nightmare.mp3",
+            },
+            {
+                "name": "SCARY MONSTERS AND NICE SPRITES",
+                "writer": "Skrillex",
+                "image": "https://i.scdn.co/image/ab67616d00001e020d9a6a2a68b4010c5b21a38c",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Skrillex_Scary_Monsters_And_Nice_Sprites_Offici.mp3",
+            },
+            {
+                "name": "Monster",
+                "writer": "Lady Gaga",
+                "image": "https://i.scdn.co/image/ab67616d00001e025c9890c0456a3719eeecd8aa",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Lady_Gaga_Monster.mp3",
+            },
+            {
+                "name": "Take what you want",
+                "writer": "Post Malone",
+                "image": "https://i.scdn.co/image/ab67616d00001e029478c87599550dd73bfa7e02",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Post_Malone_Take_What_You_Want.mp3",
+            },
+            {
+                "name": "Disturbia",
+                "writer": "Rihanna",
+                "image": "https://i.scdn.co/image/ab67616d00001e02f9f27162ab1ed45b8d7a7e98",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Rihanna_Disturbia.mp3",
+            },
+            {
+                "name": "FEED MY FRANKENSTEIN",
+                "writer": "Alice Cooper",
+                "image": "https://i.scdn.co/image/ab67616d00001e020dfeebaf5d196ff2638a3633",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Alice_Cooper_Feed_My_Frankenstein_Official_Vide.mp3",
+            },
+            {
+                "name": "Everyday is Halloween",
+                "writer": "Ministry",
+                "image": "https://i.scdn.co/image/ab67616d00001e025f7bf0ab57f9df0883b4cc74",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Ministry_Every_Day_Is_Halloween.mp3",
+            },
+            {
+                "name": "Bury a friend",
+                "writer": "Billie Eilish",
+                "image": "https://i.scdn.co/image/ab67616d00001e0250a3147b4edd7701a876c6ce",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Billie_Eilish_bury_a_friend.mp3",
+            },
+            {
+                "name": "Thriller",
+                "writer": "Micheal Jackson",
+                "image": "https://i.scdn.co/image/ab67616d00001e02de437d960dda1ac0a3586d97",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Michael_Jackson_Thriller.mp3",
+
+            }
+        ];
+        const childrenSongs = [
+            {
                 "name": "This is Halloween",
                 "writer": "Danny Elfman",
-                "image": "https://i.scdn.co/image/ab67616d00004851edf6710f9c0cd81e37fcaf3d",
-                "song": "./sample copy 1.mp3"
+                "image": "https://i.scdn.co/image/ab67616d00001e0247cc5d86f3528b233f2b78ff",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Dino_Nuggz_This_is_Halloween.mp3",
             },
             {
                 "name": "Monster Mash",
-                "writer": "Bobby \"Boris\" Pickett",
-                "image": "https://i.scdn.co/image/ab67616d00001e02b32dfcf8065fdb8ff77b360e",
-                "song": "./sample copy 2.mp3"
+                "writer": "Bobby Boris Pickett",
+                "image": "https://i.scdn.co/image/ab67616d00004851edf6710f9c0cd81e37fcaf3d",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Bobby_Boris_Pickett_Monster_Mash.mp3",
             },
             {
-                "name": "Under My Bed",
+                "name": "Under my bed",
                 "writer": "Recess Monkeys",
-                "image": "https://i.scdn.co/image/ab67616d00001e02a3cf7d524baed9e303302918",
-                "song": "./sample copy 3.mp3"
+                "image": "https://i.scdn.co/image/ab67616d00001e02b32dfcf8065fdb8ff77b360e",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Under_My_Bed.mp3",
             },
             {
-                "name": "Spooky, Scary Skeletons",
+                "name": "Spooky, scary skeletons",
                 "writer": "Andrew Gold",
-                "image": "https://media.timeout.com/images/105846107/380/285/image.jpg",
-                "song": "./sample copy 4.mp3"
+                "image": "https://i.scdn.co/image/ab67616d00001e02a3cf7d524baed9e303302918",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Spooky_Scary_Skeletons_Original_Video_4K_HD_.mp3",
             },
             {
-                "name": "Them Bones",
+                "name": "Them bones",
                 "writer": "Casper Babypants",
-                "image": "https://i.scdn.co/image/ab67616d00001e02893b3ceb557f555b81137655",
-                "song": "./sample copy 5.mp3"
+                "image": "https://media.timeout.com/images/105846107/380/285/image.jpg",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\The_Skeleton_Dance.mp3",
             },
             {
-                "name": "The Monster Hop",
+                "name": "The Monster hop",
                 "writer": "Bert Convy",
-                "image": "https://i.scdn.co/image/ab67616d00001e02a401debe1538c240f685d2db",
-                "song": "./sample copy 6.mp3"
+                "image": "https://i.scdn.co/image/ab67616d00001e02893b3ceb557f555b81137655",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Bert_Convy_The_Monsters_Hop.mp3",
             },
             {
                 "name": "The Purple People Eater",
                 "writer": "Sheb Wooley",
-                "image": "https://i.scdn.co/image/ab67616d00001e0244a460d1cc632b1277139c96",
-                "song": "./sample copy 7.mp3"
+                "image": "https://i.scdn.co/image/ab67616d00001e02a401debe1538c240f685d2db",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Sheb_Wooley_The_Purple_People_Eater.mp3",
             },
             {
                 "name": "Halloween Sharks",
                 "writer": "Pinkfong",
-                "image": "https://i.scdn.co/image/ab67616d00001e02372695b19253e632d3fc96a7",
-                "song": "./sample copy 8.mp3"
+                "image": "https://i.scdn.co/image/ab67616d00001e0244a460d1cc632b1277139c96",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Pinkfong_Halloween_Zombie_Sharks.mp3",
             },
             {
                 "name": "Costume Party",
                 "writer": "The Pop Ups",
+                "image": "https://i.scdn.co/image/ab67616d00001e02372695b19253e632d3fc96a7",
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Jack_Johnson_Costume_Party.mp3",
+            },
+            {
+                "name": "Ghostbusters",
+                "writer": "Ray Parker",
                 "image": "https://i.scdn.co/image/ab67616d00001e02aed4808eac27b70ba532f0e4",
-                "song": "./sample copy 9.mp3"
+                "path": "C:\Users\ADMIN\OneDrive\Documents\GitHub\JSA26\SPCK-JSA26\Music\mp3\Ray_Parker_Jr_Ghostbusters.mp3",
+
             }
+        ];
+        const playlist = [
+            {
+                "name": "Halloween Howls",
+                "writer": "Andrew Gold",
+                "image": "https://i.scdn.co/image/ab67616d00001e02a3cf7d524baed9e303302918"
+            },
+            {
+                "name": "Halloween beats",
+                "writer": "H@tten",
+                "image": "https://i.scdn.co/image/ab67616d00001e02403eb6112596985a80a6b62b"
+            },
+            {
+                "name": "Helloween Playlist",
+                "writer": "various artists",
+                "image": "https://i.scdn.co/image/ab67616d00001e0218595c65a8b0914b55f82da3"
+            },
+            {
+                "name": "Halloween",
+                "writer": "JDHD Beats",
+                "image": "https://i.scdn.co/image/ab67616d00001e02e4b15c92ae3f2690483c7a00"
+            },
+            {
+                "name": "Halloween with CoComelon",
+                "writer": "CoComelon",
+                "image": "https://i.scdn.co/image/ab67616d00001e027318a1fc927fe7824a59dc12"
+            },
+
         ];
 
         localStorage.setItem("adultSongs", JSON.stringify(adultSongs));

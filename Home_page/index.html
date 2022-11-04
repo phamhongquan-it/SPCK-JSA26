@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Halloween.jpg">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Shadows+Into+Light&amp;display=swap">
+</head>
+
+<body>
+    <div class="heading" id="home">
+        <div class="nav">
+            <ul class="navbar">
+                <li><a href="#home" class="navitems" style="color: #FE7D17;">Home</a></li>
+                <li><a href="#about" class="navitems">About</a></li>
+                <li><a href="#services" class="navitems">Services</a></li>
+            </ul>
+        </div>
+        <div class="open">
+            <p style="font-size: 24px"><b>AFTER DARK EVENT 2022</b></p>
+            <p class="pd">Halloween Party</p>
+            <p style="font-size: 24px; margin-top: 170px;">Do you dare explore our haunted historic places in the
+                dark<br>this Halloween?</p>
+            <a href="../cosplay/dk.html"><button>BUY TICKETS</button></a>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <img src="https://ld-wt73.template-help.com/tf/witchfest/images/index-01-534x600.png">
+        <div class="inside-about">
+            <div class="api"></div>
+            <p class="p2" id="name"></p>
+            <p style="font-size: 20px; font-weight: 200;" id="desc"></p>
+            <ul>
+                <li class="about-li"><span style="color: #FE7D17;">Where:</span> <span id="address"></span><br></li>
+                <li class="about-li"><span style="color: #FE7D17;">When:</span> <span id="time"></span></li>
+            </ul>
+            <a href="../cosplay/dk.html"><button class="order-tickets">ORDER TICKETS</button></a>
+        </div>
+    </div>
+    <div class="services" id="services">
+        <div class="party-begin">
+            <p class="p1">Let the Party begin!</p>
+            <p style="font-size: 20px; font-weight: 200; text-align: center;">Every Halloween event we offer a varied selection of
+                activities
+                for any age.<br>From horror music to
+                scary cloths, there's a lot you can take part in.</p>
+        </div>
+        <div class="stuff-inside-services">
+            <div class="div-stuff">
+                <a href="../Music/music.html"><img src="icons8-music-64.png" style="height: 204px; width: 204px;"></a>
+                <h4>Halloween music</h4>
+                <p>Discover a lot of scary music for all ages.</p>
+            </div>
+            <div class="div-stuff">
+                <a href="../cosplay/index.html"><img src="ghost.png"></a>
+                <h4>Cosplay</h4>
+                <p>Make you become more scary in Halloween.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img class="logo1" src="/cosplay/assets/Logocovien.png" alt="logo">
+        <div class="logo">
+            <a href="https://www.youtube.com/channel/UCqvQWrqyTGx4g80dMPi7Gwg"><img src="icons8-youtube-96.png" alt="" class="icon"></a>
+            <a href=""><img src="icons8-facebook-50.png" alt="" class="icon"></a>
+            <a href=""><img src="icons8-instagram-26.png" alt="" class="icon"></a>
+            <a href=""><img src="icons8-twitter-30.png" alt="" class="icon"></a>
+            <a href=""><img src="icons8-linkedin-2-32.png" alt="" class="icon"></a>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <p style="text-align: center">© 2022 Halloween event. All rights reserved.<br>
+                Design by "JSA26"</p>
+        </div>
+    </div>
+
+    <script>
+        // Tạo sự kiện khi cuộn xuống thì đổi nền của header
+        const nav = document.querySelector(".nav");
+        window.addEventListener("scroll", () => {
+            const position = document.documentElement.scrollTop;
+
+            if (position > 100) {
+                nav.style.backgroundColor = "rgb(255, 255, 255)";
+                nav.style.boxShadow = "0.5px 0.5px 0.5px #AAA";
+            } else {
+                nav.style.backgroundColor = "transparent";
+                nav.style.boxShadow = "none";
+            }
+        });
+        const apiFact = "https://634bbd3cd90b984a1e3e8ce3.mockapi.io/party-info/1";
+        fetch(apiFact).then((r) => r.json())
+            .then((data) => {
+                console.log(data);
+                document.querySelector("#name").innerHTML = data.name
+                document.querySelector("#desc").innerHTML = data.desc
+                document.querySelector("#address").innerHTML = data.address
+                document.querySelector("#time").innerHTML = data.time
+            })
+    </script>
+</body>
+
+</html>
